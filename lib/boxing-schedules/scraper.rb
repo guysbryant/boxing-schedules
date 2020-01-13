@@ -1,0 +1,2 @@
+class BoxingSchedules::Scraper 
+end 
