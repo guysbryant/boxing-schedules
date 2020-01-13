@@ -1,4 +1,4 @@
-class Boxing::CLI
+class BoxingSchedules::CLI
 
   def start
     puts "Hello World"
