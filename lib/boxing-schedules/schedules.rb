@@ -1,6 +1,6 @@
 require "boxing-schedules/version"
 
-module Boxing
+module BoxingSchedules
     class Error < StandardError; end
     # Your code goes here...
 end

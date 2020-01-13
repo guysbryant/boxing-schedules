@@ -5,7 +5,7 @@ require "boxing-schedules/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "boxing-schedules"
-  spec.version       = Boxing::Schedules::VERSION
+  spec.version       = BoxingSchedules::VERSION
   spec.authors       = ["'Jason J Cruz'"]
   spec.email         = ["'jaycru06@yahoo.com'"]
 

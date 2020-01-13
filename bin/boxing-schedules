@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-require "boxing-schedules/boxing"
+require_relative "../lib/boxing"
 
 
 BoxingSchedules::CLI.new.start

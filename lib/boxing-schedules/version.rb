@@ -1,3 +1,3 @@
-module Boxing
+module BoxingSchedules
     VERSION = "0.1.0"
 end
