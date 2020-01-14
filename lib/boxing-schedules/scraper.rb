@@ -5,18 +5,36 @@ class BoxingSchedules::Scraper
   # scheduled fight channels/locations selector: page.css("p.fight-channels").text.gsub("\n", " ")
   # scheduled fight events selector: page.css("div.schedules a").map{|link| link["href"]}.join(" ").strip
   # fighter names selector: page.css(".fighter-name").text
+  # scheduled fight event details: page.css(".schedule-details-block").text.gsub("\n", "").split.each
 
   def self.scrape_scheduled_fights
     url = "https://schedule.boxingscene.com/"
     page = Nokogiri::HTML(open(url))
     fight_schedules_events = page.css("div.schedules a").map{|link| link["href"]}.join(" ").strip
-    fighter_names = page.css(".fighter-name").text.split.each do |name|
-      puts name
-    end
+  end
+
+  def self.scrape_fight_locations
+    url = "https://schedule.boxingscene.com/"
+    page = Nokogiri::HTML(open(url))
     fight_channels_locations = page.css("p.fight-channels").text.gsub("\n", " ").split.each do |fight|
       puts fight
     end
-    # open url and scrape all scheduled fights.
+  end
+
+  def self.scrape_fighter_names
+    url = "https://schedule.boxingscene.com/"
+    page = Nokogiri::HTML(open(url))
+    fighter_names = page.css(".fighter-name").text.split.each do |name|
+      puts name
+    end
+  end
+
+  def self.scrape_fight_details
+    url = "https://schedule.boxingscene.com/"
+    page = Nokogiri::HTML(open(url))
+    fight_details = page.css(".schedule-details-block").text.gsub("\n", "").split.each do |details|
+      puts details
+    end
   end
 
 end
