@@ -19,18 +19,18 @@ class BoxingSchedules::CLI
       case user_input
       when '1'
         # get fight dates, display them to the user.
-        "fight dates"
+        puts "fight dates"
         url = "https://box.live/upcoming-fights-schedule/"
         BoxingSchedules::Scraper.scrape_scheduled_fights(url)
       when '2'
         # get fight times, display them to the user.
-        "fight times"
+        puts "fight times"
       when '3'
         # get fighter names, display them to the user.
-        "fighter names"
+        puts "fighter names"
       when '4'
         # get fight location/arena, display it to the user.
-        "fight location"
+        puts "fight location"
       when 'exit'
         puts "Goodbye!"
       else
