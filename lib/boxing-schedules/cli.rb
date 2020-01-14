@@ -20,8 +20,7 @@ class BoxingSchedules::CLI
       when '1'
         # get fight dates, display them to the user.
         puts "fight dates"
-        url = "https://box.live/upcoming-fights-schedule/"
-        BoxingSchedules::Scraper.scrape_scheduled_fights(url)
+        BoxingSchedules::Scraper.scrape_scheduled_fights
       when '2'
         # get fight times, display them to the user.
         puts "fight times"
@@ -31,6 +30,7 @@ class BoxingSchedules::CLI
       when '4'
         # get fight location/arena, display it to the user.
         puts "fight location"
+        BoxingSchedules::Scraper.scrape_scheduled_fights
       when 'exit'
         puts "Goodbye!"
       else
