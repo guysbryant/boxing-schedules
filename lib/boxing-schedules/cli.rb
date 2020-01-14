@@ -14,6 +14,8 @@ class BoxingSchedules::CLI
     when '1'
       # get fight dates, display them to the user.
       "fight dates"
+      url = "https://box.live/upcoming-fights-schedule/"
+      BoxingSchedules::Scraper.scrape_scheduled_fights(url)
     when '2'
       # get fight times, display them to the user.
       "fight times"
