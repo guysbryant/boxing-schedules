@@ -1,5 +1,4 @@
 # This class scrapes scheduled upcoming fights
-
 class BoxingSchedules::Scraper
   # scrape site: https://schedule.boxingscene.com/ or https://box.live/upcoming-fights-schedule/
   # scheduled fight channels/locations selector: page.css("p.fight-channels").text.gsub("\n", " ")
@@ -35,7 +34,7 @@ class BoxingSchedules::Scraper
     page = Nokogiri::HTML(open(url))
     page.css(".schedule-time-block").text.gsub("\n", "").split.each do |time|
       puts time
-    end 
+    end
   end
 
   def self.scrape_fight_details
