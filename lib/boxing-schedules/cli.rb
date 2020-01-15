@@ -35,8 +35,10 @@ class BoxingSchedules::CLI
         BoxingSchedules::Scraper.scrape_fight_channels_locations
       when 'exit'
         puts "Goodbye!"
+      when 'list'
+        main_menu
       else
-        start
+        puts "Invalid input, that is not an option."
       end
     end
   end
