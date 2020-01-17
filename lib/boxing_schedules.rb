@@ -6,4 +6,4 @@ require 'pry'
 require_relative "boxing-schedules/version"
 require_relative "boxing-schedules/cli"
 require_relative "boxing-schedules/scraper"
-require_relative "boxing-schedules/boxing"
+require_relative "boxing-schedules/fight"

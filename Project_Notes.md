@@ -11,8 +11,9 @@ CLI Data Gem Project Notes:
 7. discover objects
 8. Program
 
+Clases:
 
-User Interface:
+User Interface(CLI):
 
 - user types boxing-schedules
 
@@ -24,3 +25,12 @@ _ a fight has:
   2. fight location
   3. fight channel
   4. fight time
+
+Fight: 
+
+
+Scraper:
+
+
+
+

@@ -10,7 +10,8 @@ class BoxingSchedules::Scraper
   def self.scrape_scheduled_fights
     url = "https://schedule.boxingscene.com/"
     page = Nokogiri::HTML(open(url))
-    fight_schedules_events = page.css("div.schedules a").map{|link| link["href"]}.join(" ").strip
+    boxing_sechedule_content = page.css("div.schedules").each do |fight|
+    end 
   end
 
   def self.scrape_fight_channels_locations
