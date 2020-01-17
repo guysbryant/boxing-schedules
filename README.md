@@ -2,7 +2,7 @@ CLI Data Gem Project
 
 # Boxing Schedules
 
-This project scrapes data on upcoming boxing matches and displays the informartion to the user.
+This Ruby Gem scrapes data on upcoming boxing matches and displays the informartion to the user.
 
 ## Installation
 
