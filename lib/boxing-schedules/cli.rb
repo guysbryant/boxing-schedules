@@ -1,7 +1,7 @@
 class BoxingSchedules::CLI
 
   def main_menu
-    puts "Hello, Welcome to The Boxing Fight Schedule Generator."
+    puts "Hello, Welcome to The Boxing Schedules CLI App."
     puts "Which displayed option would you like to select(Type the number to select):"
     puts "1.Fight details."
     puts "2.Fight times."
