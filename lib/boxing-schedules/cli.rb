@@ -11,6 +11,12 @@ class BoxingSchedules::CLI
     puts "Type 'list' to see options again."
   end
 
+  def scheduled_fight_details
+    BoxingSchedules::Scraper.scrape_scheduled_fights.join("").gsub("\n", "").split.each do |fight|
+      puts "#{fight}"
+    end
+  end
+
   def start
     user_input = nil
     while user_input != 'exit'
@@ -20,7 +26,7 @@ class BoxingSchedules::CLI
       when '1'
         # get fight dates, display them to the user.
         puts "fight details:"
-        BoxingSchedules::Scraper.scrape_fight_details
+        scheduled_fight_details
       when '2'
         # get fight times, display them to the user.
         puts "fight times:"
